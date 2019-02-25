@@ -5,7 +5,7 @@ from pandas import read_sql_query, to_datetime
 import json
 
 app = Flask(__name__)
-socketio = SocketIO(app)
+socketio = SocketIO(app, path='sample')
 
 
 @socketio.on('GET_SAMPLE_REQUEST')
